@@ -2,6 +2,12 @@
 // But when a synchronous function is called with the await keyword, it doesn't make the function asynchronous, instead, it wraps the returned 
 //value in a resolved promise
 
+//  ------------------- important concept ------------------------//
+// await wait for the promises to resolve and if function is synchronous then also it will convert the that fucntion into promise implicitely and 
+//In JavaScript, the await keyword is used to pause the execution of a function until a Promise is resolved or rejected. When you use await in a function, 
+// the function is implicitly wrapped in a Promise and its result is resolved or rejected based on the result of the awaited Promise.
+// This means that if you use await in a function that doesn't return a Promise, the function will be implicitly converted into a Promise that resolves to the return value of the function.
+
 
 // explnaition
 // 1-> first all the code with console.log will print and code will implement line by line 
